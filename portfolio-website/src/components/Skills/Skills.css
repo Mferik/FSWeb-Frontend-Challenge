@@ -1,0 +1,13 @@
+@media (max-width: 768px) {
+    .skills-container {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
+    }
+  
+    .skills-item {
+      width: calc(33.33% - 10px);
+      margin-bottom: 1rem;
+    }
+  }
+  
