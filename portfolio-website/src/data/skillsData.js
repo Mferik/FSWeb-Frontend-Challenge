@@ -11,31 +11,26 @@ const skillsDatas = [
     img: jslogo,
   },
   {
-    
-    skill:'nodejs',
-        img:nodejslogo
-  },
-  {
-    
     skill: "react",
     img: reactlogo,
   },
-  
-    {
-        
-        skill:'vscode',
-        img:vscodelogo
-    }
-    ,
-    {
-        skill: "redux",
-        img: reduxlogo,
-    }
-    ,
-    {
-        skill:'figma',
-        img:figmalogo
-    }
+  {
+    skill: "redux",
+    img: reduxlogo,
+  },
+
+  {
+    skill: "nodejs",
+    img: nodejslogo,
+  },
+  {
+    skill: "vscode",
+    img: vscodelogo,
+  },
+  {
+    skill: "figma",
+    img: figmalogo,
+  },
 ];
 
 export default skillsDatas;

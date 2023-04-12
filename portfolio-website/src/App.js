@@ -4,7 +4,7 @@ import { Footer } from "./components/Footer/Footer";
 import { Skills } from "./components/Skills/Skills";
 import { Profile } from "./components/Profile/Profile";
 import { Projects } from "./components/Projects/Projects";
-import { Changes } from "./components/Buttons/Changes";
+
 import "./App.css";
 
 function App() {
@@ -18,7 +18,6 @@ function App() {
         >
           <div className="hidden lg:block lg:absolute lg:h-[671px] lg:w-[30%] lg:bg-[#CBF281] dark:bg-[ #171043] lg:top-0 lg:right-0 -z-10"></div>
           <div className="hidden lg:block lg:absolute lg:h-[671px] lg:w-[70%] lg:bg-[#4731D3] lg:top-0 lg:left-0 -z-10"></div>
-          <Changes/>
           <Header />
           <Hero />
         </section>
