@@ -45,3 +45,19 @@
 
   color: #4731d3;
 }
+@media only screen and (max-width: 1200px) {
+  .tr {
+  position: static;
+  height: auto;
+  left: auto;
+  top: auto;
+  }
+  .darkmode {
+  position: absolute;
+  left: 85px;
+  transform: translateX(-50%);
+  top: 15px;
+  color: #CAF181;
+  margin-top: 20px;
+  }
+  }
