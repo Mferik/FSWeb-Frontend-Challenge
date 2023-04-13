@@ -47,9 +47,14 @@ export const Projects = () => {
   })
 
   return (
+    <section
+          id="projects"
+          className="w-full bg-[#CBF281] lg:relative lg:min-h-max lg:pt-[84px] lg:pb-24 dark:bg-[#1A210B]"
+        >
     <div className=" px-5 pt-16 pb-16 flex flex-col gap-y-7 lg:p-0 lg:w-[960px] lg:mx-auto">
       <h2 className="text-[48px] text-[#4731D3] font-bold">Projects</h2>
       <div className="flex flex-col gap-y-9">{projects}</div>
     </div>
+    </section>
   )
 }

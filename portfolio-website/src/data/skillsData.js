@@ -20,7 +20,7 @@ const skillsDatas = [
   },
 
   {
-    skill: "nodejs",
+    skill: "node",
     img: nodejslogo,
   },
   {

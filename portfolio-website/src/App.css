@@ -4,6 +4,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 @layer base {
   html {
     scroll-behavior: smooth;
@@ -44,6 +45,16 @@
   letter-spacing: 0.1em;
 
   color: #4731d3;
+}
+
+.toggle:checked {
+  background-color: #FFE86E;
+  box-shadow: var(--handleoffsetcalculator) 0 0 2px #8F88FF inset, 0 0 0 2px #8F88FF inset, var(--togglehandleborder);
+  
+}
+.toggle{
+  box-shadow: var(--handleoffsetcalculator) 0 0 2px #3A3A3A inset, 0 0 0 2px #3A3A3A inset, var(--togglehandleborder);
+  background-color:#FFE86E;
 }
 @media only screen and (max-width: 1200px) {
   .tr {
