@@ -7,6 +7,8 @@ import { Profile } from "./components/Profile/Profile";
 import { Projects } from "./components/Projects/Projects";
 import { ThemeContext } from "./context/themeContext";
 import { LanguageContext } from "./context/languageContext";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import "./App.css";
 
 function App() {
@@ -46,9 +48,30 @@ function App() {
     if (theme === "dark") {
       document.documentElement.classList.remove("dark");
       localStorage.setItem("mode", "light");
+      toast.success('Açık Tema Aktif', {
+        position: "bottom-center",
+        autoClose: 2000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "dark",
+        });
+      
     } else {
       document.documentElement.classList.add("dark");
       localStorage.setItem("mode", "dark");
+      toast.success('Gece Modu Aktif', {
+        position: "bottom-center",
+        autoClose: 2000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+        });
     }
   };
   const handleLanguage = () => {
@@ -56,11 +79,33 @@ function App() {
     if (language === "en") {
       document.documentElement.classList.add("en");
       localStorage.setItem("language", "tr");
+      toast.success('Sayfa artık Türkçe :)', {
+        position: "bottom-center",
+        autoClose: 2000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "dark",
+      });
     } else {
       document.documentElement.classList.remove("en");
       localStorage.setItem("language", "en");
+      toast.success('The site is now in English :P', {
+        position: "bottom-center",
+        autoClose: 2000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "dark",
+      });
     }
+   
   };
+  
 
   return (
     <ThemeContext.Provider value={{ theme, handleTheme }}>
@@ -76,6 +121,7 @@ function App() {
           <Projects />
 
           <Footer />
+          <ToastContainer />
         </div>
       </LanguageContext.Provider>
     </ThemeContext.Provider>

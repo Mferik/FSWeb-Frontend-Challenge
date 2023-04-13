@@ -1,6 +1,8 @@
 import React, { useContext } from "react";
 import { ThemeContext } from "../../context/themeContext";
 import {LanguageContext} from '../../context/languageContext'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import "../../App.css";
 export const Header = () => {
   const { theme, handleTheme } = useContext(ThemeContext);
@@ -69,6 +71,9 @@ export const Header = () => {
           Fatih Erik
         </p>
       </div>
+     <ToastContainer/>
+
     </section>
   );
+ 
 };

@@ -13,6 +13,7 @@
     "react-scripts": "5.0.1",
     "react-styled-toggle": "^1.0.18",
     "react-switch": "^7.0.0",
+    "react-toastify": "^9.1.2",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
