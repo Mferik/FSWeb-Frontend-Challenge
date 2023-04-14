@@ -13,7 +13,7 @@ export const Header = () => {
   return (
     <section
       id={theme}
-      className=" fixed z-5 w-full pb-16 bg-[#4731D3]  lg:relative lg:min-h-max lg:flex lg:flex-col lg:gap-y-10 lg:pt-9 lg:pb-36 lg:bg-transparent  "
+      className="dark:sm:bg-[#171043] w-full pb-16 bg-[#4731D3]  lg:relative lg:min-h-max lg:flex lg:flex-col lg:gap-y-10 lg:pt-9 lg:pb-36 lg:bg-transparent  "
     >
       <div
         id={theme}

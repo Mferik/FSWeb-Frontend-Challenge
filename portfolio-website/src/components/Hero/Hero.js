@@ -10,7 +10,7 @@ export const Hero = () => {
   return (
     <section
       id={theme}
-      className="w-full pb-16 bg-[#4731D3]  lg:relative lg:min-h-max lg:flex lg:flex-col lg:gap-y-10 lg:pt-9 lg:pb-36 lg:bg-transparent "
+      className="dark:sm:bg-[#171043] w-full pb-16 bg-[#4731D3]  lg:relative lg:min-h-max lg:flex lg:flex-col lg:gap-y-10 lg:pt-9 lg:pb-36 lg:bg-transparent "
     >
       <div
         id={theme}
@@ -20,7 +20,7 @@ export const Hero = () => {
       <div className="hidden lg:block lg:absolute lg:h-[671px] lg:w-[70%] lg:bg-[#4731D3]  lg:top-0 lg:left-0 -z-10 dark:bg-[#171043]"></div>
       <div className="px-5 gap-y-2 pt-[18%] w-full flex flex-col items-center lg:pt-0 lg:px-0 lg:flex-row lg:items-end lg:w-[960px] lg:mx-auto">
         <div className="flex flex-col gap-y-9">
-          <div className="w-full sm:flex sm:justify-center md:flex md:justify-center  bg-[#4731D3] lg:static lg:bg-transparent  lg:mx-auto lg:justify-start flex  ">
+          <div className="  dark:sm:bg-[#171043] w-full sm:flex sm:justify-center md:flex md:justify-center  bg-[#4731D3] lg:static lg:bg-transparent  lg:mx-auto lg:justify-start flex  ">
             <p className="px-5 py-3 text-[32px] text-[#CBF281] font-bold lg:px-0 lg:py-5 ">
               Fatih Erik
             </p>

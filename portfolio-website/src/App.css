@@ -20,12 +20,6 @@
   }
 }
 
-.header{
-  position: fixed;
-  width: 100%;
-  z-index: 1;
-}
-
 .tr {
   position: absolute;
   height: 18px;
