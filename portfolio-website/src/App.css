@@ -50,11 +50,14 @@
 .toggle:checked {
   background-color: #FFE86E;
   box-shadow: var(--handleoffsetcalculator) 0 0 2px #8F88FF inset, 0 0 0 2px #8F88FF inset, var(--togglehandleborder);
-  
+  ;
 }
 .toggle{
   box-shadow: var(--handleoffsetcalculator) 0 0 2px #3A3A3A inset, 0 0 0 2px #3A3A3A inset, var(--togglehandleborder);
-  background-color:#FFE86E;
+ 
+  border-color: #3A3A3A;
+	background: var(#3A3A3A);
+	box-shadow: inset 7px 0px 0px 0px yellow;
 }
 
 @media only screen and (max-width: 1200px) {

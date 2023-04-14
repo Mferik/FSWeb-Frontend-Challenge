@@ -44,7 +44,7 @@ export const Header = () => {
     id={theme}
     onChange={() => handleTheme()}
     type="checkbox"
-    className="toggle"
+    className="toggle "
   />
   {language === "tr" &&
     (theme === "light" ? (
