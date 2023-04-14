@@ -11,10 +11,19 @@
   }
 
   body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
     font-family: "Inter", sans-serif;
     width: 100%;
     line-height: 1;
   }
+}
+
+.header{
+  position: fixed;
+  width: 100%;
+  z-index: 1;
 }
 
 .tr {
@@ -54,13 +63,12 @@
 }
 .toggle{
   box-shadow: var(--handleoffsetcalculator) 0 0 2px #3A3A3A inset, 0 0 0 2px #3A3A3A inset, var(--togglehandleborder);
- 
   border-color: #3A3A3A;
 	background: var(#3A3A3A);
 	box-shadow: inset 7px 0px 0px 0px yellow;
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1440px ) {
   .tr {
   position: static;
   height: auto;
@@ -75,4 +83,20 @@
   color: #CAF181;
   margin-top: 20px;
   }
+  
   }
+  @media only screen and (max-width: 1024px) {
+
+    .skills {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+    .skills-items{
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    }
+    

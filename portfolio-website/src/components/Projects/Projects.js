@@ -27,17 +27,15 @@ export const Projects = () => {
           <h4 className="text-[32px] text-[#4338CA] font-bold dark:text-[#C1BAED]">
             {project.name}
           </h4>
-          {
-            language !== "tr" ? (
-              <p className="text-[16px] text-[#383838] leading-tight dark:text-[#FFFFFF]">
-            {project.body}
-          </p>
-            ): (
-              <p className="text-[16px] text-[#383838] leading-tight dark:text-[#FFFFFF]">
-            {project.bodytr}
-          </p>
-            )
-          }
+          {language !== "tr" ? (
+            <p className="text-[16px] text-[#383838] leading-tight dark:text-[#FFFFFF]">
+              {project.body}
+            </p>
+          ) : (
+            <p className="text-[16px] text-[#383838] leading-tight dark:text-[#FFFFFF]">
+              {project.bodytr}
+            </p>
+          )}
           <div className="flex flex-wrap gap-[6px] ">{tools}</div>
           <div className="flex gap-x-9">
             {language !== "tr" ? (

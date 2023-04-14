@@ -7,7 +7,7 @@ export const Skills = () => {
   const { language } = useContext(LanguageContext);
   const skillItem = skillsDatas.map((item, index) => {
     return (
-      <div key={index} className=" flex items-center gap-x-4 ">
+      <div key={index} className=" skills-items flex items-center gap-x-4 ">
         <img src={item.img} alt="" />
         <p className=" flex text-[24px] text-[#777777] font-medium uppercase dark:text-white">
           {item.skill}
@@ -31,7 +31,7 @@ export const Skills = () => {
             Becerilerim
           </h2>
         )}
-        <div className="flex flex-col flex-wrap gap-y-9 lg:gap-x-[20%]  ">
+        <div className="skills flex flex-col flex-wrap gap-y-9 lg:gap-x-[20%]  ">
           {skillItem}
         </div>
       </div>
